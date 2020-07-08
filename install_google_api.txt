@@ -1,0 +1,66 @@
+mks@dbox:~/3sie/google_api_2$ pip install google-api-python-client
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support
+Defaulting to user installation because normal site-packages is not writeable
+Collecting google-api-python-client
+  Downloading google-api-python-client-1.9.3.tar.gz (142 kB)
+     |████████████████████████████████| 142 kB 1.6 MB/s 
+Requirement already satisfied: httplib2<1dev,>=0.9.2 in /usr/lib/python2.7/dist-packages (from google-api-python-client) (0.14.0)
+Collecting google-auth>=1.16.0
+  Downloading google_auth-1.18.0-py2.py3-none-any.whl (90 kB)
+     |████████████████████████████████| 90 kB 1.2 MB/s 
+Collecting google-auth-httplib2>=0.0.3
+  Downloading google_auth_httplib2-0.0.4-py2.py3-none-any.whl (9.1 kB)
+Collecting google-api-core<2dev,>=1.18.0
+  Downloading google_api_core-1.21.0-py2.py3-none-any.whl (90 kB)
+     |████████████████████████████████| 90 kB 1.1 MB/s 
+Requirement already satisfied: six<2dev,>=1.6.1 in /usr/lib/python2.7/dist-packages (from google-api-python-client) (1.14.0)
+Requirement already satisfied: uritemplate<4dev,>=3.0.0 in /home/mks/.local/lib/python2.7/site-packages (from google-api-python-client) (3.0.1)
+Collecting cachetools<5.0,>=2.0.0
+  Downloading cachetools-3.1.1-py2.py3-none-any.whl (11 kB)
+Requirement already satisfied: setuptools>=40.3.0 in /usr/local/lib/python2.7/dist-packages (from google-auth>=1.16.0->google-api-python-client) (44.1.1)
+Collecting pyasn1-modules>=0.2.1
+  Downloading pyasn1_modules-0.2.8-py2.py3-none-any.whl (155 kB)
+     |████████████████████████████████| 155 kB 2.6 MB/s 
+Collecting rsa<4.1; python_version < "3"
+  Downloading rsa-4.0-py2.py3-none-any.whl (38 kB)
+Collecting pytz
+  Downloading pytz-2020.1-py2.py3-none-any.whl (510 kB)
+     |████████████████████████████████| 510 kB 2.3 MB/s 
+Collecting protobuf>=3.12.0
+  Downloading protobuf-3.12.2-cp27-cp27mu-manylinux1_x86_64.whl (1.3 MB)
+     |████████████████████████████████| 1.3 MB 2.2 MB/s 
+Collecting googleapis-common-protos<2.0dev,>=1.6.0
+  Downloading googleapis_common_protos-1.52.0-py2.py3-none-any.whl (100 kB)
+     |████████████████████████████████| 100 kB 910 kB/s 
+Collecting requests<3.0.0dev,>=2.18.0
+  Downloading requests-2.24.0-py2.py3-none-any.whl (61 kB)
+     |████████████████████████████████| 61 kB 51 kB/s 
+Collecting futures>=3.2.0; python_version < "3.2"
+  Downloading futures-3.3.0-py2-none-any.whl (16 kB)
+Collecting pyasn1<0.5.0,>=0.4.6
+  Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
+     |████████████████████████████████| 77 kB 681 kB/s 
+Collecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1
+  Downloading urllib3-1.25.9-py2.py3-none-any.whl (126 kB)
+     |████████████████████████████████| 126 kB 1.8 MB/s 
+Collecting certifi>=2017.4.17
+  Downloading certifi-2020.6.20-py2.py3-none-any.whl (156 kB)
+     |████████████████████████████████| 156 kB 2.1 MB/s 
+Collecting chardet<4,>=3.0.2
+  Downloading chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+     |████████████████████████████████| 133 kB 2.7 MB/s 
+Collecting idna<3,>=2.5
+  Downloading idna-2.10-py2.py3-none-any.whl (58 kB)
+     |████████████████████████████████| 58 kB 634 kB/s 
+Building wheels for collected packages: google-api-python-client
+  Building wheel for google-api-python-client (setup.py) ... done
+  Created wheel for google-api-python-client: filename=google_api_python_client-1.9.3-py2-none-any.whl size=59821 sha256=7e14749a7a25045c595f0d665b751a35ba6e3ac995a916b6c6741c6110db3541
+  Stored in directory: /home/mks/.cache/pip/wheels/eb/61/d3/e8eac97121b20e0598719b94a204188c6bb406b4ba9e7b4c29
+Successfully built google-api-python-client
+Installing collected packages: cachetools, pyasn1, pyasn1-modules, rsa, google-auth, google-auth-httplib2, pytz, protobuf, googleapis-common-protos, urllib3, certifi, chardet, idna, requests, futures, google-api-core, google-api-python-client
+  WARNING: The scripts pyrsa-decrypt, pyrsa-encrypt, pyrsa-keygen, pyrsa-priv2pub, pyrsa-sign and pyrsa-verify are installed in '/home/mks/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The script chardetect is installed in '/home/mks/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed cachetools-3.1.1 certifi-2020.6.20 chardet-3.0.4 futures-3.3.0 google-api-core-1.21.0 google-api-python-client-1.9.3 google-auth-1.18.0 google-auth-httplib2-0.0.4 googleapis-common-protos-1.52.0 idna-2.10 protobuf-3.12.2 pyasn1-0.4.8 pyasn1-modules-0.2.8 pytz-2020.1 requests-2.24.0 rsa-4.0 urllib3-1.25.9
+
